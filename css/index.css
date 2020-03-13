@@ -1,0 +1,703 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box !important;
+}
+html {
+  background-color: linear-gradient(to right, #D92121 0%, #FE6F5E 50%, #D92121 100%);
+  font-size: 62.5%;
+}
+#homepage {
+  height: 100%;
+  font-family: 'Indie Flower', cursive;
+  color: #222;
+  font-size: 1.6rem;
+  background-image: linear-gradient(to right, #D92121 0%, #FE6F5E 50%, #D92121 100%);
+}
+.hdnav {
+  display: flex;
+  justify-content: flex-end;
+}
+.hdnav a {
+  margin: 0.5% 0.2%;
+  color: white;
+  padding: 0.5%;
+  border: 2px dotted white;
+  border-radius: 15% 40%;
+}
+.hdnav a:hover {
+  margin: 0.5% 0.2%;
+  color: #50BFE6;
+  padding: 0.5%;
+  border: 2px dotted #50BFE6;
+  border-radius: 40% 15%;
+  background: #2E5894;
+}
+.story {
+  display: flex;
+  justify-content: center;
+  margin: 2% 20% 2% 20%;
+  color: white;
+  border: 2px dotted white;
+}
+.story h3 {
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 0 0 15px black;
+  text-align: center;
+  text-decoration: underline;
+}
+.story p {
+  margin: 5% auto;
+  padding: 0 3%;
+  line-height: 20px;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+}
+.story span {
+  padding: 0 7%;
+  font-size: 1.5em;
+}
+.story li {
+  padding: 1% 10%;
+  font-size: 0.8em;
+}
+.Donate {
+  margin: auto 40%;
+  font-size: 2em;
+  background: red;
+  border: 2px outset white;
+  color: white;
+  border-radius: 5% 20%;
+}
+.Donate:hover {
+  background: white;
+  border: 2px inset red;
+  border-radius: 20% 5%;
+  color: red;
+}
+@keyframes move {
+  0% {
+    transform: translateY(0px) translateX(1000px);
+  }
+  50% {
+    transform: translateY(0px) translateX(-1000px);
+  }
+  100% {
+    transform: translateY(0) translateX(1000px);
+  }
+}
+@keyframes spin {
+  100% {
+    transform: rotate(475deg);
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: rotate(15deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+.shadow {
+  text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke, -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
+}
+.shadow2 {
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+header {
+  position: relative;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: none;
+  overflow: hidden;
+  text-shadow: 0 0 15px #ffffff, 0 0 15px #ffffff;
+}
+header .kds {
+  position: absolute;
+  height: 500px;
+  width: 4700px;
+  background-image: url("/img/celebs.jpg");
+  animation: move 100s infinite linear;
+  will-change: transform;
+  opacity: 0.8;
+}
+header .korbyn-header {
+  position: absolute;
+  height: 100%;
+  background-image: linear-gradient(#4bd1a9, #effde4);
+}
+header .header {
+  z-index: 99;
+  align-items: left;
+  width: 400px;
+  padding: 25px;
+}
+header .header h1 {
+  color: #FD0E35;
+  font-size: 10em;
+}
+header .header h2 {
+  font-size: 3em;
+  color: #FF9980;
+  margin-top: -10%;
+}
+/***About***/
+#about {
+  height: 100%;
+  font-family: 'Indie Flower', cursive;
+  color: #222;
+  font-size: 1.6rem;
+  background-image: linear-gradient(to right, #D92121 0%, #FE6F5E 50%, #D92121 100%);
+}
+#about .saeli h5 {
+  color: #FD0E35;
+  font-size: 10em;
+}
+#about .theTeam {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin: auto;
+  padding-bottom: 5%;
+  text-shadow: 0 0 30px #000000;
+  font-weight: bold;
+  flex-wrap: wrap;
+}
+#about .theTeam .pics,
+#about .theTeam .pics div {
+  margin: auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+#about .theTeam .pics {
+  transform: rotate(120deg);
+}
+#about .theTeam .pics1 {
+  transform: rotate(-60deg);
+}
+#about .theTeam .pics2 {
+  transform: rotate(-60deg);
+}
+#about .theTeam .pics:hover {
+  animation: spin 2s ease;
+}
+#about .theTeam h5 {
+  font-size: 2em;
+  text-shadow: 2px 2px 15px black;
+  box-shadow: 2px 2px 15px black;
+}
+#about .theTeam h6 {
+  font-size: 2em;
+  text-shadow: 2px 2px 15px black;
+  box-shadow: 2px 2px 15px black;
+}
+#about .theTeam .ui,
+#about .theTeam .reactiia,
+#about .theTeam .be {
+  color: #8bacf1;
+}
+#about .uiP,
+#about .reactiP,
+#about .reactiiaP,
+#about .reactiibP,
+#about .beP {
+  color: whitesmoke;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25em;
+  text-shadow: 2px 2px 15px black;
+  box-shadow: 2px 2px 15px black;
+  letter-spacing: 0.1em;
+  border-radius: 5%;
+}
+#about .uiP:hover,
+#about .reactiP:hover,
+#about .reactiiaP:hover,
+#about .reactiibP:hover,
+#about .beP:hover {
+  animation: wiggle 0.5s ease;
+}
+#footer {
+  margin: 10%;
+}
+#footer .credit,
+#footer .copyright {
+  font-size: 2em;
+  text-align: center;
+  color: white;
+}
+@media (max-width: 500px) {
+  #footer .credit,
+  #footer .copyright {
+    font-size: 1em;
+  }
+}
+#login-page {
+  height: 100%;
+  font-family: 'Indie Flower', cursive;
+  color: #222;
+  font-size: 1.6rem;
+  background-image: linear-gradient(to right, black 0%, lime 10%, slateblue 20%, #AD4379 30%, #676767 40%, black 50%, #676767 60%, #AD4379 70%, slateblue 80%, lime 90%, black 100%);
+}
+#login-page h3 {
+  font-family: 'Nosifer', cursive;
+  font-size: 10rem;
+  text-align: center;
+  margin: auto;
+  text-shadow: 2px 2px 15px #5a0232;
+  transform: skew(25deg);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  #login-page h3 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 1105px) {
+  #login-page h3 {
+    font-size: 4rem;
+  }
+}
+#login-page h3 .R0,
+#login-page h3 .G0,
+#login-page h3 .S0,
+#login-page h3 .E00 {
+  color: white;
+  text-shadow: 2px 2px 15px black;
+}
+#login-page h3 .E0,
+#login-page h3 .I0,
+#login-page h3 .T0,
+#login-page h3 .R00 {
+  color: black;
+  text-shadow: 2px 2px 15px white;
+}
+#login-page .log {
+  position: absolute;
+  height: 475px;
+  width: 9000px;
+  background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/COVDWMSKLR.jpg");
+  animation: move 225s infinite linear;
+  will-change: transform;
+  opacity: 0.7;
+}
+@media (max-width: 500px) {
+  #login-page .log {
+    height: 400px;
+  }
+}
+@media (max-width: 1105px) {
+  #login-page .log {
+    height: 400px;
+  }
+}
+#login-page .logins {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: auto 20%;
+  font-size: 1.5em;
+}
+#login-page .logins h4 {
+  margin-bottom: 1%;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+#login-page .logins h4 {
+  font-size: 3em;
+  color: lime;
+  font-family: 'Fredericka the Great', cursive;
+}
+@media (max-width: 500px) {
+  #login-page .logins h4 {
+    font-size: 1em;
+  }
+}
+@media (max-width: 1105px) {
+  #login-page .logins h4 {
+    font-size: 1em;
+  }
+}
+#login-page .logins div {
+  color: lime;
+  margin: auto 10%;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  font-size: 2em;
+  margin-bottom: 1%;
+}
+@media (max-width: 500px) {
+  #login-page .logins div {
+    font-size: 0.75em;
+  }
+}
+@media (max-width: 1105px) {
+  #login-page .logins div {
+    font-size: 0.75em;
+  }
+}
+#login-page .logins input {
+  font-size: 0.75em;
+}
+@media (max-width: 500px) {
+  #login-page .logins input {
+    font-size: 0.5em;
+  }
+}
+@media (max-width: 1105px) {
+  #login-page .logins input {
+    font-size: 0.5em;
+  }
+}
+#register {
+  height: 100%;
+  font-family: 'Indie Flower', cursive;
+  color: #222;
+  font-size: 1.6rem;
+  background-image: linear-gradient(to right, blue 0%, yellow 10%, red 20%, orange 30%, silver 40%, black 50%, silver 60%, orange 70%, red 80%, yellow 90%, blue 100%);
+}
+#register h3 {
+  font-family: 'Nosifer', cursive;
+  font-size: 10rem;
+  text-align: center;
+  margin: auto;
+  text-shadow: 2px 2px 15px #5a0232;
+  transform: skew(25deg);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+@media (max-width: 500px) {
+  #register h3 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 1105px) {
+  #register h3 {
+    font-size: 4rem;
+  }
+}
+#register h3 .R0,
+#register h3 .G0,
+#register h3 .S0,
+#register h3 .E00 {
+  color: white;
+  text-shadow: 2px 2px 15px black;
+}
+#register h3 .E0,
+#register h3 .I0,
+#register h3 .T0,
+#register h3 .R00 {
+  color: black;
+  text-shadow: 2px 2px 15px white;
+}
+#register .reg {
+  position: absolute;
+  height: 475px;
+  width: 9000px;
+  background-image: url("https://cdn.stocksnap.io/img-thumbs/960w/6YLKY6CUWI.jpg");
+  animation: move 225s infinite linear;
+  will-change: transform;
+  opacity: 0.7;
+}
+@media (max-width: 500px) {
+  #register .reg {
+    height: 400px;
+  }
+}
+@media (max-width: 1105px) {
+  #register .reg {
+    height: 400px;
+  }
+}
+#register .registeration {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 80%;
+  margin: auto 20%;
+  font-size: 1.5em;
+}
+#register .registeration h4 {
+  margin-bottom: 1%;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 whitesmoke, -1px 1px 0 black, 1px 1px 0 whitesmoke;
+}
+#register .registeration h4 {
+  font-size: 3em;
+  color: blue;
+  font-family: 'Fredericka the Great', cursive;
+}
+@media (max-width: 500px) {
+  #register .registeration h4 {
+    font-size: 1em;
+  }
+}
+@media (max-width: 1105px) {
+  #register .registeration h4 {
+    font-size: 1em;
+  }
+}
+#register .registeration div {
+  color: blue;
+  margin: auto 10%;
+  text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke, -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
+  font-size: 2em;
+  margin-bottom: 1%;
+}
+@media (max-width: 500px) {
+  #register .registeration div {
+    font-size: 0.75em;
+  }
+}
+@media (max-width: 1105px) {
+  #register .registeration div {
+    font-size: 0.75em;
+  }
+}
+#register .registeration input {
+  font-size: 0.75em;
+}
+@media (max-width: 500px) {
+  #register .registeration input {
+    font-size: 0.5em;
+  }
+}
+@media (max-width: 1105px) {
+  #register .registeration input {
+    font-size: 0.5em;
+  }
+}
+@font-face {
+  font-family: 'Creepster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Creepster'), local('Creepster-Regular'), url(https://fonts.gstatic.com/s/creepster/v8/AlZy_zVUqJz4yMrniH4Rcn38.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Eater';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Eater'), local('Eater-Regular'), url(https://fonts.gstatic.com/s/eater/v8/mtG04_FCK7bOvquxsXU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Fredericka the Great';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fredericka the Great'), local('FrederickatheGreat'), url(https://fonts.gstatic.com/s/frederickathegreat/v9/9Bt33CxNwt7aOctW2xjbCstzwVKsIBVV--SjxbI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Griffy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Griffy'), local('Griffy-Regular'), url(https://fonts.gstatic.com/s/griffy/v8/FwZa7-ox2FQh9kfAT96A.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Indie Flower'), local('IndieFlower'), url(https://fonts.gstatic.com/s/indieflower/v11/m8JVjfNVeKWVnh3QMuKkFcZVaUuC.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Leckerli One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Leckerli One'), local('LeckerliOne-Regular'), url(https://fonts.gstatic.com/s/leckerlione/v10/V8mCoQH8VCsNttEnxnGQ-1idKpZY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Monoton'), local('Monoton-Regular'), url(https://fonts.gstatic.com/s/monoton/v9/5h1aiZUrOngCibe4TkHLRw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nosifer';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nosifer'), local('Nosifer-Regular'), url(https://fonts.gstatic.com/s/nosifer/v8/ZGjXol5JTp0g5bxZWCpbUA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v16/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Princess Sofia';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Princess Sofia'), local('PrincessSofia'), url(https://fonts.gstatic.com/s/princesssofia/v8/qWczB6yguIb8DZ_GXZst16n7GSz8kjE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ruthie';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ruthie'), local('Ruthie-Regular'), url(https://fonts.gstatic.com/s/ruthie/v10/gokvH63sGkdqXuUNkzRz.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Shojumaru';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Shojumaru'), local('Shojumaru-Regular'), url(https://fonts.gstatic.com/s/shojumaru/v7/rax_HiWfutkLLnaKCtl8Axha.ttf) format('truetype');
+}
